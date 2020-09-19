@@ -1,0 +1,106 @@
+\documentclass{article}
+
+\title{Chapter 2: Motion Along A Single Line}
+\author{Rylan Polster}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            x &= \text{position} \nonumber\\
+            \Delta x &= \text{displacement} \nonumber\\
+            t &= \text{time} \nonumber\\
+            \Delta t &= \text{change in time} \nonumber\\
+            v_{\text{avg}} &= \text{average velocity} \nonumber\\
+            v &= \text{instantaneous velocity} \nonumber\\
+            s_{\text{avg}} &= \text{average speed} \nonumber\\
+            a_{\text{avg}} &= \text{average acceleration} \nonumber\\
+            a &= \text{instantaneous acceleration} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            g &= 9.8 \text{ m}/\text{s}^2 \nonumber
+        \end{align}
+
+    \section{Position, Displacement, and Average Velocity}
+
+        \paragraph{Displacement}
+        \begin{equation}
+            \Delta x = x_2 - x_1
+        \end{equation}
+
+        \paragraph{Average Velocity}
+        \begin{equation}
+            v_{\text{avg}} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+        \end{equation}
+
+        \paragraph{Average Speed}
+        \begin{equation}
+            s_{\text{avg}} = \frac{\text{total distance}}{\Delta t}
+        \end{equation}
+
+    \section{Instantaneous Velocity and Speed}
+
+        \paragraph{Instantaneous Velocity}
+        \begin{equation}
+            v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
+        \end{equation}
+
+    \section{Acceleration}
+
+        \paragraph{Average Acceleration}
+        \begin{equation}
+            a_{\text{avg}} = \frac{\Delta v}{\Delta t} = \frac{v_2 - v_1}{t_2 - t_1}
+        \end{equation}
+
+        \paragraph{Instantaneous Acceleration}
+        \begin{equation}
+            a = \frac{dv}{dt}
+        \end{equation}
+        \begin{equation}
+            a = \frac{dv}{dt} = \frac{d}{dt} \left( \frac{dx}{dt} \right) = \frac{d^2x}{dt^2}
+        \end{equation}
+    
+    \section{Constant Acceleration}
+
+        \begin{equation}
+            v = v_0 + at
+        \end{equation}
+        \begin{equation}
+            x - x_0 = v_0t + \frac{1}{2} at^2
+        \end{equation}
+        \begin{equation}
+            v^2 = v_0^2 + 2a \left( x - x_0 \right)
+        \end{equation}
+        \begin{equation}
+            x - x_0 = \frac{1}{2} \left( v_0 + v  \right) t
+        \end{equation}
+        \begin{equation}
+            x - x_0 = vt - \frac{1}{2} at^2
+        \end{equation}
+    
+    \section{Free-fall Acceleration}
+
+        The free-fall acceleration near Earth's surface is $a = -g = -9.8 \text{ m}/\text{s}^2$, and the \textit{magnitude} of the acceleration is $g = 9.8 \text{ m}/\text{s}^2$. Do not substitute $-9.8 \text{ m}/\text{s}^2$ for $g$.
+    
+    \section{Graphical Integration In Motion Analysis}
+
+        \paragraph{Integrating Acceleration}
+        \begin{equation}
+            v_1 - v_0 = \int_{t_0}^{t_1} a \, dt
+        \end{equation}
+
+        \paragraph{Integrating Velocity}
+        \begin{equation}
+            x_1 - x_0 = \int_{t_0}^{t_1} v \, dt
+        \end{equation}
+
+\end{document}
