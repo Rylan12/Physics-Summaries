@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+# shellcheck disable=SC2039
+
+CHAPTER="$1"
+
+error() {
+    echo "\033[0;31m""Error:""\033[0;0m"" $1" >&2
+    exit 1
+}
+
+# Make sure chapter is a number
+if [[ -z $CHAPTER ]]; then
+    error "Pass a chapter number as an argument"
+elif ! [[ $CHAPTER =~ ^[0-9]+$ ]]; then
+    error "Chapter must be an integer"
+fi
+
+# Get summaries directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+if [[ -d "$DIR/Chapter $CHAPTER" ]]; then
+    error "Chapter $CHAPTER directory already exists"
+fi
+
+# Make chapter directory
+mkdir "$DIR/Chapter $CHAPTER"
+
+# Copy tex file
+cp "$DIR/Template/chapter-n.tex" "$DIR/Chapter $CHAPTER/chapter-$CHAPTER.tex"
+sed -i '' "s/<n>/$CHAPTER/g" "$DIR/Chapter $CHAPTER/chapter-$CHAPTER.tex"
+
+# Create PDF link
+ln -s "../Chapter $CHAPTER/chapter-$CHAPTER.pdf" "$DIR/PDFs/chapter-$CHAPTER.pdf"
+
+# Update README
+CHAPTERS="$(find "$DIR" -type d -name "Chapter *" | awk '{print $NF}' | sort)"
+sed '/## \[Summaries\](PDFs\/)/q' "$DIR/README.md" | tee "$DIR/README.md" > /dev/null
+echo '' >> "$DIR/README.md"
+for num in $CHAPTERS; do
+    echo "- [Chapter $num](PDFs/chapter-$num.pdf)" >> "$DIR/README.md"
+done
