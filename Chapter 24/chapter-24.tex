@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\title{Chapter 24: Electric Potential}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            \vec{E} &= \text{electric field} \nonumber\\
+            V &= \text{electric potential} \nonumber\\
+            U &= \text{electric potential energy} \nonumber\\
+            W &= work
+            \vec{F} &= \text{electrostatic Force} \nonumber\\
+            q &= \text{point charge} \nonumber\\
+            r &= \text{distance} \nonumber\\
+            \epsilon_0 &= \text{vacuum permittivity constant} \nonumber\\
+            k &= \text{Coulomb's law constant} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            \epsilon_0 &= \SI[per-mode=fraction]{8.85e-12}{\coulomb\squared\per\newton\per\meter\squared} \nonumber\\
+            k &= \frac{1}{4 \pi \epsilon_0} = \SI[per-mode=fraction]{9.0e9}{\newton\meter\squared\per\square\coulomb} \nonumber
+        \end{align}
+
+    \section{Electric Potential}
+
+        \paragraph{Electric Potential and Electric Potential Energy}
+        $V$ is the electrical potential which can be thought of as the ``electrical pressure'' at a certain point. To move a charged particle across an electric potential, there will be a change in electrostatic potential energy ($U$) in the particle.
+        \begin{equation}
+            U = -W
+        \end{equation}
+        \begin{equation}
+            V = \frac{-W_\infty}{q_0} = \frac{U}{q_0}
+        \end{equation}
+        \begin{equation}
+            U = q V
+        \end{equation}
+        \begin{equation}
+            \Delta U = q \Delta V = q \left( V_f - V_i \right)
+        \end{equation}
+
+    \section{Equipotential Lines}
+        
+        Equipotential lines are lines where the electric potential is the same. This means that there is no change in electrical potential energy when moving a particle along these lines. These lines are perpendicular to electric field lines and tend to make loops around charges.
+
+    
+    \section{Potential Due To a Charged Particle}
+
+        Note that the sign \textit{is} used when calculating electric potential.
+        
+        \paragraph{Potential Due To A Charged Particle}
+        \begin{equation}
+            V = \frac{1}{4\pi\epsilon_0} \frac{q}{r} = k \frac{q}{r}
+        \end{equation}
+
+        \paragraph{Potential Due To A Group Of Charged Particle}
+        \begin{equation}
+            V = \sum_{i=1}^{n} V_i = \frac{1}{4\pi\epsilon_0} \sum_{i=1}^{n} \frac{q_i}{r_i}
+        \end{equation}
+        In other words:
+        \begin{equation}
+            V = V_1 + V_2 + \ldots + V_n
+        \end{equation}
+    
+    \section{Electric Potential Energy Of a System Of Charged Particles}
+    
+        Note that the sign \textit{is} used when calculating electric potential energy.
+
+        \begin{equation}
+            U = \frac{1}{4\pi\epsilon_0} \frac{q_1 q_2}{r} = k \frac{q_1 q_2}{r}
+        \end{equation}
+        \begin{equation}
+            U = U_1 + U_2 + \ldots + U_n
+        \end{equation}
+
+    \section*{Electrostatic Equation Grid}
+
+        \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline                                      & \textbf{Pair of Charges}                  & \textbf{Point in Space} \\\hline
+            \multirow{4}{*}{\textbf{Vector Quantities}} &                                           & \\
+                                                        & \(\displaystyle\vec{F} = k \frac{\left|q_1\right|\left|q_2\right|}{r^2}\) & \(\displaystyle\vec{E} = k \frac{\left|q\right|}{r^2}\) \\
+                                                        &                                           & \\
+                                                        & Electric Force                            & Electric Field \\\hline
+            \multirow{4}{*}{\textbf{Scalar Quantities}} &                                           & \\
+                                                        & \(\displaystyle U = k \frac{q_1 q_2}{r}\) & \(\displaystyle V = k \frac{q}{r}\) \\
+                                                        &                                           & \\
+                                                        & Electric Potential Energy                 & Electric Potential \\\hline
+        \end{tabular}
+        \end{center}
+
+\end{document}
