@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\title{Chapter 4: Motion In Two and Three Dimensions}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            x &= \text{horizontal position} \nonumber\\
+            \Delta x &= \text{change in horizontal position} \nonumber\\
+            y &= \text{vertical position} \nonumber\\
+            \Delta y &= \text{change in vertical position} \nonumber\\
+            \vec{r} &= \text{position} \nonumber\\
+            v_0 &= \text{launch speed} \nonumber\\
+            \theta_0 &= \text{launch angle} \nonumber\\
+            R &= \text{horizontal range} \nonumber\\
+            t &= \text{time} \nonumber\\
+            T &= \text{period} \nonumber\\
+            \vec{v}_\text{avg} &= \text{average velocity} \nonumber\\
+            \vec{v} &= \text{instantaneous velocity} \nonumber\\
+            v_{\text{A,B}} &= \text{velocity of A relative to B} \nonumber\\
+            \vec{a} &= \text{instantaneous acceleration} \nonumber\\
+            \vec{a}_\text{avg} &= \text{average acceleration} \nonumber\\
+            r &= \text{radius} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            g &= \SI[per-mode=symbol]{9.8}{\meter\per\square\second} \nonumber
+        \end{align}
+
+    \section{Position and Displacement}
+
+        \begin{equation}
+            \vec{r} = x \hat{\imath} + y \hat{\jmath} + z \hat{k}
+        \end{equation}
+        \begin{equation}
+            \Delta \vec{r} = \vec{r_1} - \vec{r_2}
+        \end{equation}
+
+    \section{Average Velocity and Instantaneous Velocity}
+
+        \paragraph{Average Velocity}
+        \begin{equation}
+            \vec{v}_\text{avg} = \frac{\Delta\vec{r}}{\Delta t}
+        \end{equation}
+
+        \paragraph{Instantaneous Velocity}
+        \begin{equation}
+            \vec{v} = \frac{d\vec{r}}{dt}
+        \end{equation}
+        \begin{equation}
+            \vec{v} = v_x \hat{\imath} + v_y \hat{\jmath} + v_z \hat{k}
+        \end{equation}
+        \begin{equation}
+            v_x = \frac{dx}{dt}, \quad v_y = \frac{dy}{dt}, \quad v_z = \frac{dz}{dt}
+        \end{equation}
+
+    \section{Average Velocity and Acceleration Velocity}
+
+        \paragraph{Average Acceleration}
+        \begin{equation}
+            \vec{a}_\text{avg} = \frac{\Delta\vec{v}}{\Delta t}
+        \end{equation}
+
+        \paragraph{Instantaneous Acceleration}
+        \begin{equation}
+            \vec{a} = \frac{\vec{v_2} - \vec{v_1}}{\Delta t} = \frac{d\vec{v}}{dt}
+        \end{equation}
+        \begin{equation}
+            \vec{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}
+        \end{equation}
+        \begin{equation}
+            a_x = \frac{dv_x}{dt}, \quad a_y = \frac{dv_y}{dt}, \quad a_z = \frac{dv_z}{dt}
+        \end{equation}
+
+    \section{Projectile Motion}
+
+        In projectile motion, the horizontal motion and the vertical motion are independent of ech other, that is, neither motion affects the other.
+
+        \paragraph{Horizontal Motion}
+        \begin{equation}
+            \Delta x = \left( v_0 \cos{\theta_0} \right) t
+        \end{equation}
+
+        \paragraph{Vertical Motion}
+        \begin{equation}
+            \Delta y = \left( v_0 \sin{\theta_0} \right) t - \frac{1}{2} g t^2
+        \end{equation}
+        \begin{equation}
+            v_y = v_0 \sin{\theta_0} - g t
+        \end{equation}
+        \begin{equation}
+            v_y^2 = \left( v_0 \sin{\theta_0} \right)^2 - 2 g \Delta y
+        \end{equation}
+
+        \paragraph{Trajectory}
+        \begin{equation}
+            y = \left(\tan{\theta_0}\right) x - \frac{gx^2}{2\left(v_0\cos{\theta_0}\right)^2}
+        \end{equation}
+
+        \paragraph{Horizontal Range}
+        \begin{equation}
+            R = \frac{v_0^2}{g} \sin{2\theta_0}
+        \end{equation}
+
+    \section{Uniform Circular Motion}
+
+        Speed does not change. Direction, velocity, and acceleration change over time.
+
+        \paragraph{Centripetal Acceleration}
+        \begin{equation}
+            a = \frac{v^2}{r}
+        \end{equation}
+
+        \paragraph{Period}
+        \begin{equation}
+            T = \frac{2 \pi r}{v}
+        \end{equation}
+
+    \section{Relative Motion}
+
+        \begin{equation}
+            \vec{r}_\text{P,A} = \vec{r}_\text{P,B} + \vec{r}_\text{B,A}
+        \end{equation}
+        \begin{equation}
+            \vec{v}_\text{P,A} = \vec{v}_\text{P,B} + \vec{v}_\text{B,A}
+        \end{equation}
+        \begin{equation}
+            \vec{a}_\text{P,A} = \vec{a}_\text{P,B}
+        \end{equation}
+
+\end{document}
