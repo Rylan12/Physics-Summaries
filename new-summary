@@ -17,24 +17,24 @@ fi
 
 # Get summaries directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-if [[ -d "$DIR/Chapter $CHAPTER" ]]; then
+if [[ -d "$DIR/Summaries/Chapter $CHAPTER" ]]; then
     error "Chapter $CHAPTER directory already exists"
 fi
 
 # Make chapter directory
-mkdir "$DIR/Chapter $CHAPTER"
+mkdir "$DIR/Summaries/Chapter $CHAPTER"
 
 # Copy tex file
-cp "$DIR/Template/chapter-n.tex" "$DIR/Chapter $CHAPTER/chapter-$CHAPTER.tex"
-sed -i '' "s/<n>/$CHAPTER/g" "$DIR/Chapter $CHAPTER/chapter-$CHAPTER.tex"
+cp "$DIR/Template/chapter-n.tex" "$DIR/Summaries/Chapter $CHAPTER/chapter-$CHAPTER.tex"
+sed -i '' "s/<n>/$CHAPTER/g" "$DIR/Summaries/Chapter $CHAPTER/chapter-$CHAPTER.tex"
 
 # Create PDF link
-ln -s "../Chapter $CHAPTER/chapter-$CHAPTER.pdf" "$DIR/PDFs/chapter-$CHAPTER.pdf"
+ln -s "../Summaries/Chapter $CHAPTER/chapter-$CHAPTER.pdf" "$DIR/PDFs/chapter-$CHAPTER.pdf"
 
 # Update README
-CHAPTERS="$(find "$DIR" -type d -name "Chapter *" | awk '{print $NF}' | sort -n)"
+CHAPTERS="$(find "$DIR/Summaries" -type d -name "Chapter *" | awk '{print $NF}' | sort -n)"
 sed '/## Summaries/q' "$DIR/README.md" | tee "$DIR/README.md" > /dev/null
 echo '' >> "$DIR/README.md"
 for num in $CHAPTERS; do
-    echo "- [Chapter $num](Chapter%20$num/chapter-$num.pdf)" >> "$DIR/README.md"
+    echo "- [Chapter $num](Summaries/Chapter%20$num/chapter-$num.pdf)" >> "$DIR/README.md"
 done
