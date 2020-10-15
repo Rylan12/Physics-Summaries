@@ -1,9 +1,9 @@
-PWD /Users/rylanpolster/Documents/Physics Summaries/Chapter 3
+PWD /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.tex
-OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.log
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.tex
+OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
@@ -73,15 +73,19 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.aux
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.aux
-OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.aux
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.aux
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.aux
+OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.aux
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
@@ -162,21 +166,21 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/commutative.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/commutative.png
-OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.pdf
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/commutative.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/associative.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/associative.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/associative.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/commutative.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/commutative.png
+OUTPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.pdf
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/commutative.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/associative.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/associative.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/associative.png
 INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/components.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/components.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/components.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/dot-product.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/dot-product.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/images/dot-product.png
-INPUT /Users/rylanpolster/Documents/Physics Summaries/Chapter 3/chapter-3.aux
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/components.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/components.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/components.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/dot-product.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/dot-product.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/images/dot-product.png
+INPUT /Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 3/chapter-3.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
