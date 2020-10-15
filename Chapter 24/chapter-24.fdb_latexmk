@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1601508550 "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.tex" "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.pdf" "chapter-24" 1601508551
-  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.aux" 1601508551 993 ab1f3dc1c349390c75ba36921e1711ab ""
-  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.tex" 1601508549 4534 ea13a04e4d18f4809849d59103689c26 ""
+["pdflatex"] 1602722807 "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.tex" "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.pdf" "chapter-24" 1602722809
+  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.aux" 1602722808 993 ab1f3dc1c349390c75ba36921e1711ab ""
+  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.tex" 1602722807 4553 3fa12542ce357924ab96442cc4bae304 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -79,11 +79,11 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1598747263 4945119 398ccd6cf9244f24a4ca8de17903ca30 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1598747408 2441175 3cab4344b31748d10712a1f14750efcd ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "chapter-24.aux" 1601508551 993 ab1f3dc1c349390c75ba36921e1711ab "pdflatex"
-  "chapter-24.tex" 1601508549 4534 ea13a04e4d18f4809849d59103689c26 ""
+  "chapter-24.aux" 1602722808 993 ab1f3dc1c349390c75ba36921e1711ab "pdflatex"
+  "chapter-24.tex" 1602722807 4553 3fa12542ce357924ab96442cc4bae304 ""
   (generated)
-  "chapter-24.pdf"
-  "chapter-24.aux"
+  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.log"
   "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.pdf"
   "chapter-24.log"
-  "/Users/rylanpolster/Documents/Physics Summaries/Chapter 24/chapter-24.log"
+  "chapter-24.pdf"
+  "chapter-24.aux"
