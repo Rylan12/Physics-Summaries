@@ -32,7 +32,7 @@ sed -i '' "s/<n>/$CHAPTER/g" "$DIR/Chapter $CHAPTER/chapter-$CHAPTER.tex"
 ln -s "../Chapter $CHAPTER/chapter-$CHAPTER.pdf" "$DIR/PDFs/chapter-$CHAPTER.pdf"
 
 # Update README
-CHAPTERS="$(find "$DIR" -type d -name "Chapter *" | awk '{print $NF}' | sort)"
+CHAPTERS="$(find "$DIR" -type d -name "Chapter *" | awk '{print $NF}' | sort -n)"
 sed '/## Summaries/q' "$DIR/README.md" | tee "$DIR/README.md" > /dev/null
 echo '' >> "$DIR/README.md"
 for num in $CHAPTERS; do
