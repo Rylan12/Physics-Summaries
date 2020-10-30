@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\title{Chapter 5: Force and Motion — 1}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            \vec{F} &= \text{net force} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            a &= \text{acceleration} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber\\
+            W &= \text{weight} \nonumber\\
+            N &= \text{normal force} \nonumber\\
+            T &= \text{tension} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            g &= \SI[per-mode=symbol]{9.8}{\meter\per\square\second} \nonumber
+        \end{align}
+
+    \section{Newton's First and Second Laws}
+
+        \paragraph{Newton's First Law}
+        If no force acts on a body, the body's velocity cannot change; that is, the body cannot accelerate.
+
+        \paragraph{Newton's Second Law}
+        The net force on a body is equal to the product of the body's mass and its acceleration.
+        \begin{equation}
+            \vec{F}_\text{net} = m \vec{a}
+        \end{equation}
+        \begin{equation}
+            F_\text{net,x} = m a_x \quad F_\text{net,y} = m a_y \quad F_\text{net,z} = m a_z
+        \end{equation}
+
+    \section{Some Particular Forces}
+
+        \paragraph{Weight}
+        The weight $W$ of a body is equal to the magnitude $F_g$ of the gravitational force on the body.
+        \begin{equation}
+            W = F_g = mg
+        \end{equation}
+
+        \paragraph{Normal Force}
+        When a body presses against a surface, the surface (even a seemingly rigid one) deforms and pushes on the body with a normal force $\vec{F}_N$ that is perpendicular to the surface.
+        \begin{equation}
+            N = F_N = mg
+        \end{equation}
+
+        \paragraph{Friction}
+        If we either slide or attempt to slide a body over a surface, the motion is resisted by a bonding between the body and the surface.
+
+        \paragraph{Tension}
+        When a cord (or a rope, cable, or other such object) is attached to a body and pulled taut, the cord pulls on the body with a force $\vec{T}$ directed away from the body and along the cord.
+
+    \section{Applying Newton's Laws}
+
+        \paragraph{Newton's Third Law}
+        When two bodies interact, the forces on the bodies from each other are always equal in magnitude and opposite in direction.
+        \begin{equation}
+            F_{AB} = F_{BA}
+        \end{equation}
+
+\end{document}
