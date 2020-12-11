@@ -9,6 +9,7 @@ This is where I will type my unit summaries for my physics classes.
 - [Chapter 4](Summaries/Chapter%204/chapter-4.pdf)
 - [Chapter 5](Summaries/Chapter%205/chapter-5.pdf)
 - [Chapter 6](Summaries/Chapter%206/chapter-6.pdf)
+- [Chapter 7](Summaries/Chapter%207/chapter-7.pdf)
 - [Chapter 21](Summaries/Chapter%2021/chapter-21.pdf)
 - [Chapter 22](Summaries/Chapter%2022/chapter-22.pdf)
 - [Chapter 24](Summaries/Chapter%2024/chapter-24.pdf)

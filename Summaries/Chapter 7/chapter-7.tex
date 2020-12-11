@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\title{Chapter 7: Kinetic Energy and Work}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            K &= \text{kinetic energy} \nonumber\\
+            W &= \text{work} \nonumber\\
+            \vec{F} &= \text{force} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber\\
+            v &= \text{velocity} \nonumber\\
+            k &= \text{force constant/spring constant} \nonumber\\
+            \vec{d} &= \text{displacement} \nonumber\\
+            x &= \text{displacement} \nonumber\\
+            P &= \text{power} \nonumber\\
+            \phi &= \text{smallest angle between two vectors} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            g &= \SI[per-mode=symbol]{9.8}{\meter\per\square\second} \nonumber
+        \end{align}
+
+    \section{Kinetic Energy}
+
+        Kinetic energy is energy associated with the state of motion of an object. 
+        \begin{equation}
+            K = \frac{1}{2} m v^2
+        \end{equation}
+
+    \section{Work and Kinetic Energy}
+
+        \paragraph{Work}
+        Work is energy transferred to or from an object by means of a force acting on the object. Energy transferred to the object is positive work, and energy transferred from the object is negative work.
+
+        \paragraph{Work Done by a Constant Force}
+        \begin{equation}
+            W = \vec{F} \cdot \vec{d} = F d \cos{\phi}
+        \end{equation}
+
+    \section{Work Done By the Gravitational Force}
+
+        \begin{equation}
+            W_g = m g d \cos{\phi}
+        \end{equation}
+
+    \section{Work Done by a Spring Force}
+
+        \paragraph{Hooke's Law}
+        Hooke's Law can be used as a general rule to approximate the force using a force constant $k$.
+        \begin{equation}
+            F_x = -k x
+        \end{equation}
+
+        \paragraph{Work Done by a Spring Force}
+        \begin{equation}
+            W_s = \frac{1}{2} k x_i^2 - \frac{1}{2} k x_f^2
+        \end{equation}
+
+    \section{Work Done by a General Variable Force}
+
+        \begin{equation}
+            W = \int_{x_i}^{x_f} F(x) \, dx
+        \end{equation}
+
+    \section{Power}
+
+        \begin{equation}
+            P = \vec{F} \cdot \vec{v}
+        \end{equation}
+
+\end{document}
