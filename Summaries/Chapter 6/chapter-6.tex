@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\title{Chapter 6: Force and Motion — 2}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            F &= \text{force} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            v &= \text{velocity} \nonumber\\
+            a &= \text{acceleration} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber\\
+            f &= \text{friction force} \nonumber\\
+            W &= \text{weight} \nonumber\\
+            N &= \text{normal force} \nonumber\\
+            D &= \text{drag force} \nonumber\\
+            R &= \text{radius} \nonumber\\
+            \mu_s &= \text{coefficient of static friction} \nonumber\\
+            \mu_k &= \text{coefficient of kinetic friction} \nonumber\\
+            C &= \text{drag coefficient} \nonumber\\
+            \rho &= \text{air density} \nonumber\\
+            A &= \text{cross-sectional area} \nonumber\\
+            v_t &= \text{terminal speed} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            g &= \SI[per-mode=symbol]{9.8}{\meter\per\square\second} \nonumber
+        \end{align}
+
+    \section{Friction}
+
+        \paragraph{Static Friction}
+        \begin{equation}
+            f_{s\text{,max}} = \mu_s N
+        \end{equation}
+
+        \paragraph{Kinetic Friction}
+        \begin{equation}
+            f_k = \mu_k N
+        \end{equation}
+
+    \section{The Drag Force and Terminal Speed}
+
+        \paragraph{Drag}
+        \begin{equation}
+            D = \frac{1}{2} C \rho A v^2
+        \end{equation}
+        
+        \paragraph{Terminal Speed}
+        \begin{equation}
+            v_t = \sqrt{\frac{2 W}{C \rho A}}
+        \end{equation}
+
+    \section{Uniform Circular Motion}
+
+        \paragraph{Centripetal Acceleration}
+        \begin{equation}
+            a = \frac{v^2}{R}
+        \end{equation}
+
+        \paragraph{Centripetal Force}
+        A centripetal force accelerates a body by changing the direction of the body's velocity without changing the body's speed.
+        \begin{equation}
+            F = m \frac{v^2}{R}
+        \end{equation}
+
+\end{document}
