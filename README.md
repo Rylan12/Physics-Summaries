@@ -18,3 +18,4 @@ This is where I will type my unit summaries for my physics classes.
 - [Chapter 26](Summaries/Chapter%2026/chapter-26.pdf)
 - [Chapter 27](Summaries/Chapter%2027/chapter-27.pdf)
 - [Chapter 28](Summaries/Chapter%2028/chapter-28.pdf)
+- [Chapter 29](Summaries/Chapter%2029/chapter-29.pdf)
