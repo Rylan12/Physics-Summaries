@@ -1,0 +1,139 @@
+\documentclass{article}
+
+\title{Chapter 26: Current and Resistance}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            V &= \text{voltage} \nonumber\\
+            i &= \text{current} \nonumber\\
+            R &= \text{resistance} \nonumber\\
+            q &= \text{charge} \nonumber\\
+            t &= \text{time} \nonumber\\
+            J &= \text{current density} \nonumber\\
+            A &= \text{cross-sectional area} \nonumber\\
+            L &= \text{length} \nonumber\\
+            n &= \text{charge carriers per unit volume} \nonumber\\
+            v_d &= \text{drift speed} \nonumber\\
+            e &= \text{electron charge magnitude} \nonumber\\
+            \rho &= \text{resistivity} \nonumber\\
+            \sigma &= \text{conductivity} \nonumber\\
+            E &= \text{electric field} \nonumber\\
+            P &= \text{power} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            e &= \SI{1.60e-19}{\coulomb} \nonumber\\
+        \end{align}
+
+    \section{Electric Current}
+
+        \begin{equation}
+            i = \frac{dq}{dt}
+        \end{equation}
+
+        \paragraph{Units}
+        \begin{equation}
+            \SI{1}{\text{ampere}} = \SI{1}{\ampere} = \SI{1}{\text{coulomb per second}} = \SI[per-mode=symbol]{1}{\coulomb\per\second} \nonumber
+        \end{equation}
+
+        \paragraph{Junctions}
+        \begin{equation}
+            i_\text{in} = i_\text{out}
+        \end{equation}
+
+    \section{Current Density}
+
+        The current density tells how many charges are flowing within a given area of a conductor.
+
+        Units: $\si[per-mode=symbol]{\ampere\per\square\meter}$
+        \begin{equation}
+            i = \int \vec{J} \cdot d\vec{A}
+        \end{equation}
+
+        \paragraph{Uniform Current}
+        \begin{equation}
+            J = \frac{i}{A}
+        \end{equation}
+
+        \paragraph{Total Charge Within Length $L$}
+        \begin{equation}
+            q = \left( n A L \right) e
+        \end{equation}
+
+        \paragraph{Time For A Charge To Move Through The Conductor}
+        \begin{equation}
+            t = \frac{L}{v_d}
+        \end{equation}
+
+        \paragraph{Current} Mnemonic: ``nevada"
+        \begin{equation}
+            i = \frac{q}{t} = \frac{\left( n A L \right) e}{L/v_d} = n A e v_d
+        \end{equation}
+
+        \paragraph{Current Density}
+        \begin{equation}
+            \vec{J} = \left( n e \right) \vec{v}_d
+        \end{equation}
+
+    \section{Resistance and Resistivity}
+
+        \paragraph{Resistance}
+        Units: $\si{\ohm}$
+        \begin{equation}
+            R = \frac{V}{i}
+        \end{equation}
+
+        \paragraph{Resistivity}
+        Units: $\si{\ohm\meter}$
+        \begin{equation}
+            \rho = \frac{E}{J}
+        \end{equation}
+        \begin{equation}
+            \vec{E} = \rho \vec{J}
+        \end{equation}
+        
+        \paragraph{Conductivity}
+        \begin{equation}
+            \sigma = \frac{1}{\rho}
+        \end{equation}
+
+        \paragraph{Resistance and Resistivity}
+        Resistance is a property of an object. Resistivity is a property of a material.
+        \begin{equation}
+            R = \rho \frac{L}{A}
+        \end{equation}
+
+    \section{Ohm's Law}
+
+        \begin{equation}
+            V = i R
+        \end{equation}
+
+    \section{Power}
+
+        \begin{equation}
+            P = i V
+        \end{equation}
+        \begin{equation}
+            P = i^2 R
+        \end{equation}
+        \begin{equation}
+            P = \frac{V^2}{R}
+        \end{equation}
+
+\end{document}
