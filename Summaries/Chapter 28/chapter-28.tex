@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\title{Chapter 28: Magnetic Fields}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            \vec{B} &= \text{magnetic field} \nonumber\\
+            \vec{F}_B &= \text{magnetic force} \nonumber\\
+            \vec{E} &= \text{electric field} \nonumber\\
+            \vec{v} &= \text{velocity} \nonumber\\
+            q &= \text{charge} \nonumber\\
+            i &= \text{current} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            \vec{L} &= \text{length} \nonumber\\
+            \phi &= \text{smallest angle between two vectors} \nonumber
+        \end{align}
+
+    \section{Magnetic Fields and Forces}
+    
+        \paragraph{Units}
+        \begin{equation}
+            \SI{1}{tesla} = \SI{1}{\tesla} = \SI[per-mode=fraction]{1}{\newton\per\ampere\per\meter}
+        \end{equation}
+
+        \paragraph{Magnetic Force}
+        The force $\vec{F}_B$ acting on a charged particle moving with velocity $\vec{v}$ through a magnetic field $\vec{B}$ is always perpendicular to $\vec{v}$ and $\vec{B}$.
+        \begin{equation}
+            \vec{F}_B = q \left( \vec{v} \times \vec{B} \right)
+        \end{equation}
+        \begin{equation}
+            F_B = \left| q \right| v B \sin{\phi}
+        \end{equation}
+
+    \section{Velocity Selector}
+
+        A capacitor has an electric field that points to the negative plate. If we send some particles through, they will be moved in the direction of the electric field. We can use a magnetic field to oppose that.
+
+        \paragraph{Selected Velocity}
+        \begin{equation}
+            v_s = \frac{E}{B}
+        \end{equation}
+
+    \section{Mass Spectrometer}
+
+        There is a magnetic field that causes the particles to go through a circular motion. The radius of the circle changes relative to the mass.
+        \begin{equation}
+            r = \frac{m v}{q B}
+        \end{equation}
+
+    \section{Magnetic Force on a Current-Carrying Wire}
+
+        \begin{equation}
+            \vec{F}_B = i \left(\vec{L} \times \vec{B} \right)
+        \end{equation}
+        \begin{equation}
+            F_B = i L B \sin{\phi}
+        \end{equation}
+
+\end{document}
