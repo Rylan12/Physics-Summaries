@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\title{Chapter 8: Potential Energy and Conservation of Energy}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            U &= \text{potential energy} \nonumber\\
+            E &= \text{energy} \nonumber\\
+            E_\text{mec} &= \text{mechanical energy} \nonumber\\
+            E_\text{th} &= \text{thermal energy} \nonumber\\
+            E_\text{int} &= \text{internal energy} \nonumber\\
+            W &= \text{work} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            g &= \text{magnitude of free-fall acceleration} \nonumber\\
+            v &= \text{velocity} \nonumber\\
+            t &= \text{time} \nonumber\\
+            k &= \text{force constant/spring constant} \nonumber\\
+            F &= \text{force} \nonumber\\
+            f_k &= \text{friction force} \nonumber\\
+            d &= \text{displacement} \nonumber\\
+            x &= \text{displacement} \nonumber\\
+            y &= \text{vertical displacement} \nonumber\\
+            P_\text{avg} &= \text{average power} \nonumber\\
+            P &= \text{instantaneous power} \nonumber\\
+        \end{align}
+
+    \paragraph{Constants}
+    \begin{align}
+        g &= \SI[per-mode=symbol]{9.8}{\meter\per\square\second} \nonumber
+    \end{align}
+
+    \section{Potential Energy}
+
+        \paragraph{Conservative Forces}
+        The net work done by a conservative force on a particle moving around any closed path is zero. The work done by a conservative force on a particle moving between two points does not depend on the path taken by the particle.
+
+        \paragraph{Gravitational Potential Energy}
+        \begin{equation}
+            U(y) = m g y
+        \end{equation}
+
+        \paragraph{Elastic Potential Energy}
+        \begin{equation}
+            U(x) = \frac{1}{2} k x^2
+        \end{equation}
+
+    \section{Conservation of Mechanical Energy}
+
+        In an isolated system where only conservative forces cause energy changes, the kinetic energy and potential energy can change, but their sum, the mechanical energy $E_\text{mec}$ of the system, cannot change.
+
+        When the mechanical energy of a system is conserved, we can relate the sum of kinetic energy and potential energy at one instant to that at another instant without considering the intermediate motion and without finding the work done by the forces involved.
+
+    \section{Reading A Potential Energy Curve}
+
+        \paragraph{One-Dimensional Motion}
+        \begin{equation}
+            F(x) = - \frac{dU(x)}{dx}
+        \end{equation}
+
+    \section{Work Done on A System By An External Force}
+
+        Work is energy transferred to or from a system by means of an external force acting on that system.
+
+        \paragraph{Work Done on A System With No Friction Involved}
+        \begin{equation}
+            W = \Delta E_\text{mec}
+        \end{equation}
+
+        \paragraph{Thermal Energy Due to Friction}
+        \begin{equation}
+            \Delta E_\text{th} = f_k d
+        \end{equation}
+
+        \paragraph{Work Done on A System With Friction Involved}
+        \begin{equation}
+            W = \Delta E_\text{mec} + \Delta E_\text{th}
+        \end{equation}
+
+    \section{Conservation of Energy}
+
+        The total energy E of a system can change only by amounts of energy that are transferred to or from the system.
+        \begin{equation}
+            W = \Delta E = \Delta E_\text{mec} + \Delta E_\text{th} + \Delta E_\text{int}
+        \end{equation}
+
+        \paragraph{Isolated Systems}
+        The total energy $E$ of an isolated system cannot change.
+        \begin{equation}
+            \Delta E_\text{mec} + \Delta E_\text{th} + \Delta E_\text{int} = 0
+        \end{equation}
+
+        \paragraph{Average Power}
+        \begin{equation}
+            P_\text{avg} = \frac{\Delta E}{\Delta t}
+        \end{equation}
+
+        \paragraph{Instantaneous Power}
+        \begin{equation}
+            P = \frac{dE}{dt}
+        \end{equation}
+
+\end{document}
