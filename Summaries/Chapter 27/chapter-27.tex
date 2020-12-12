@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\title{Chapter 27: Circuits}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+    
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            R &= \text{resistance} \nonumber\\
+            i &= \text{current} \nonumber\\
+            \mathcal{E} &= \text{electromotive force (EMF)} \nonumber\\
+            V_\text{AB} &= \text{terminal voltage} \nonumber
+        \end{align}
+
+    \section{Single-Loop Circuits}
+
+        \paragraph{Loop Rule}
+        The algebraic sum of the changes in potential encountered in a complete traversal of any loop of a circuit must be zero.
+
+        \paragraph{Resistance Rule}
+        For a move through a resistance in the direction of the current, the change in potential is $-iR$; in the opposite direction it is $+iR$.
+
+        \paragraph{EMF Rule}
+        For a move through an ideal emf device in the direction of the emf arrow, the change in potential is $+\mathcal{E}$; in the opposite direction it is $-\mathcal{E}$.
+
+        \paragraph{Terminal Voltage and Internal Resistance}
+        \begin{equation}
+            V_\text{AB} = \mathcal{E} - i R
+        \end{equation}
+
+    \section{Resistors in Parallel and in Series}
+        
+        \paragraph{Resistance In Parallel}
+        \begin{equation}
+            R_\text{eq} = \sum_{j=1}^n \frac{1}{R_j}
+        \end{equation}
+
+        \paragraph{Resistance In Series}
+        \begin{equation}
+            R_\text{eq} = \sum_{j=1}^n R_j
+        \end{equation}
+
+    \section{The Ammeter and the Voltmeter}
+
+        \paragraph{Ammeters}
+        Ammeters must be placed in series with the component whose current is being measured. The ammeters should have a resistance that is as low as possible ($R_\text{ammeter} \approx \SI{0}{\ohm}$).
+
+        \paragraph{Voltmeters}
+        Voltmeters must be placed in parallel with the component whose voltage is being measured. The voltmeter should have a resistance that is as high as possible ($R_\text{voltmeter} \approx \infty$).
+
+\end{document}
