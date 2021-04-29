@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\title{Chapter 9: Center of Mass and Linear Momentum}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            x_{\text{com}} &= \text{center of mass} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            M &= \text{total mass of a system} \nonumber\\
+            \rho &= \text{density} \nonumber\\
+            V &= \text{volume} \nonumber\\
+            \vec{v} &= \text{velocity} \nonumber\\
+            \vec{v}_{\text{com}} &= \text{velocity of the center of mass} \nonumber\\
+            \vec{p} &= \text{linear momentum} \nonumber\\
+            \vec{P} &= \text{linear momentum of a system} \nonumber\\
+            \vec{F}_{\text{net}} &= \text{net force} \nonumber
+        \end{align}
+
+    \section{Center of Mass}
+
+        \paragraph{Systems of Particles}
+        $y_{\text{com}}$ and $z_{\text{com}}$ can be calculated by replacing $x_i$ with $y_i$ and $z_i$ respectively.
+        \begin{equation}
+            x_{\text{com}} = \frac{1}{M} \sum_{i=1}^n m_i x_i
+        \end{equation}
+
+        \paragraph{Solid Bodies}
+        $y_{\text{com}}$ and $z_{\text{com}}$ can be calculated by replacing $x$ with $y$ and $z$ respectively.
+        \begin{equation}
+            x_{\text{com}} = \frac{1}{M} \int x \, dm \label{eq:com-integral}
+        \end{equation}
+        To solve this, use the following relationship:
+        \begin{equation}
+            \rho = \frac{dm}{dV} = \frac{M}{V} \nonumber
+        \end{equation}
+        \begin{equation}
+            dm = \frac{M}{V} dV \nonumber
+        \end{equation}
+        Therefore, by substituting the above into \eqref{eq:com-integral} for $dm$:
+        \begin{equation}
+            x_{\text{com}} = \frac{1}{V} \int x \, dV
+        \end{equation}
+
+    \section{Linear Momentum}
+
+        \paragraph{Single Particle}
+        \begin{equation}
+            \vec{p} = m \vec{v}
+        \end{equation}
+        \begin{equation}
+            \vec{F}_{\text{net}} = \frac{d\vec{p}}{dt}
+        \end{equation}
+        \paragraph{System of Particles}
+        \begin{equation}
+            \vec{P} = M \vec{v}_{\text{com}}
+        \end{equation}
+        \begin{equation}
+            \vec{F}_{\text{net}} = \frac{d\vec{P}}{dt}
+        \end{equation}
+
+    \section{Collision and Impulse}
+
+        \paragraph{Impulse}
+        \begin{equation}
+            \vec{J} = \Delta \vec{p} = \int_{t_i}^{t_f} \vec{F}(t) \, dt
+        \end{equation}
+
+    \section{Conservation of Linear Momentum}
+
+        If no net external force acts on a system of particles, the total linear momentum $\vec{P}$ of the system cannot change.
+
+    \section{Momentum and Kinetic Energy In Collisions}
+
+        \paragraph{Elastic Collision}
+        The total kinetic energy of the system is \textit{conserved} (it is the same before and after the collision).
+
+        \paragraph{Inelastic Collision}
+        Some energy is transferred from kinetic energy to other forms of energy, such as thermal energy.
+
+        \paragraph{Completely Inelastic Collision}
+        The bodies stick together resulting in the greatest amount of kinetic energy being lost.
+
+\end{document}
