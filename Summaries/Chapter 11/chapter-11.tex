@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\title{Chapter 11: Rolling, Torque, and Angular Momentum}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            v &= \text{linear velocity} \nonumber\\
+            \omega &= \text{angular velocity} \nonumber\\
+            R &= \text{radius} \nonumber\\
+            K &= \text{kinetic energy} \nonumber\\
+            I &= \text{rotational inertia} \nonumber\\
+            M &= \text{mass} \nonumber\\
+            \tau &= \text{torque} \nonumber\\
+            \vec{r} &= \text{lever arm} \nonumber\\
+            \vec{F} &= \text{force} \nonumber\\
+            \vec{\ell} &= \text{angular momentum} \nonumber\\
+            \vec{L} &= \text{angular momentum of a system} \nonumber\\
+            \vec{v} &= \text{linear momentum} \nonumber
+        \end{align}
+
+    \section{Rolling As Translation and Rotation Combined}
+
+        \paragraph{Center of Wheel}
+        \begin{equation}
+            v_\text{com} = \omega R
+        \end{equation}
+
+        \paragraph{Top of Wheel}
+        \begin{equation}
+            v_\text{top} = 2 v_\text{com}
+        \end{equation}
+
+        \paragraph{Bottom of Wheel}
+        \begin{equation}
+            v_\text{bottom} = 0
+        \end{equation}
+
+    \section{Kinetic Energy of A Rolling Object}
+
+        \begin{equation}
+            K = \frac{1}{2} I_\text{com} \omega^2 + \frac{1}{2} M v_\text{com}^2
+        \end{equation}
+
+    \section{Torque}
+
+        \begin{equation}
+            \vec{\tau} = \vec{r} \times \vec{F}
+        \end{equation}
+
+    \section{Angular Momentum}
+
+        \begin{equation}
+            \vec{\ell} = \vec{r} \times \vec{p} = m \left( \vec{r} \times \vec{v} \right)
+        \end{equation}
+
+        \paragraph{Newton's Second Law in Angular Momentum}
+        The (vector) sum of all the torques acting on a particle is equal to the time rate of change of the angular momentum of that particle.
+        \begin{equation}
+            \vec{\tau}_\text{net} = \frac{d\vec{\ell}}{dt}
+        \end{equation}
+
+        \paragraph{Angular Momentum of A Rigid Body}
+        \begin{equation}
+            \vec{\tau} = \frac{d\vec{L}}{dt}
+        \end{equation}
+        \begin{equation}
+            L = I \omega
+        \end{equation}
+
+    \section{Conservation of Angular Momentum}
+
+        If the net external torque acting on a system is zero, the angular momentum $\vec{L}$ of the system remains constant, no matter what changes take place within the system.
+
+        \begin{equation}
+            \vec{L}_i = \vec{L}_f
+        \end{equation}
+
+\end{document}
