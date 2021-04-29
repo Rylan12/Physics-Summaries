@@ -1,0 +1,134 @@
+\documentclass{article}
+
+\title{Chapter 10: Rotation}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            s &= \text{arc length} \nonumber\\
+            r &= \text{radius} \nonumber\\
+            \theta &= \text{angular position} \nonumber\\
+            \omega &= \text{angular velocity} \nonumber\\
+            \alpha &= \text{angular acceleration} \nonumber\\
+            v &= \text{linear velocity} \nonumber\\
+            a_t &= \text{tangential acceleration} \nonumber\\
+            a_r &= \text{radial acceleration} \nonumber\\
+            K &= \text{kinetic energy} \nonumber\\
+            I &= \text{rotational inertia} \nonumber\\
+            I_\text{com} &= \text{rotational inertia about an axis at the center of mass} \nonumber\\
+            h &= \text{perpendicular distance between two axes} \nonumber\\
+            \tau &= \text{torque} \nonumber\\
+            \phi &= \text{angle between the force and the lever arm} \nonumber
+        \end{align}
+
+    \section{Rotational Variables}
+
+        \paragraph{Angular Position}
+        \begin{equation}
+            \theta = \frac{s}{r}
+        \end{equation}
+
+        \paragraph{Angular Velocity}
+        \begin{equation}
+            \omega = \lim_{\Delta t \to 0} \frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}
+        \end{equation}
+
+        \paragraph{Angular Acceleration}
+        \begin{equation}
+            \alpha = \lim_{\Delta t \to 0} \frac{\Delta \omega}{\Delta t} = \frac{d\omega}{dt}
+        \end{equation}
+
+    \section{Rotation With Constant Angular Acceleration}
+
+        \begin{equation}
+            \omega = \omega_0 + \alpha t
+        \end{equation}
+        \begin{equation}
+            \theta - \theta_0 = \omega_0 t + \frac{1}{2} \alpha t^2
+        \end{equation}
+        \begin{equation}
+            \omega^2 = \omega_0^2 + 2 \alpha \left( \theta - \theta_0 \right)
+        \end{equation}
+        \begin{equation}
+            \theta - \theta_0 = \frac{1}{2} \left( \omega_0 + \omega \right) t
+        \end{equation}
+        \begin{equation}
+            \theta - \theta_0 = \omega t - \frac{1}{2} \alpha t^2
+        \end{equation}
+
+    \section{Relating the Linear and Angular Variables}
+
+        \paragraph{Position}
+        \begin{equation}
+            s = \theta r
+        \end{equation}
+
+        \paragraph{Speed}
+        \begin{equation}
+            v = \omega r
+        \end{equation}
+
+        \paragraph{Tangential Acceleration}
+        \begin{equation}
+            a_t = \alpha r
+        \end{equation}
+
+        \paragraph{Radial Acceleration}
+        \begin{equation}
+            a_r = \frac{v^2}{r} = \omega^2 r
+        \end{equation}
+        Radial acceleration is directed toward the center
+
+    \section{Kinetic Energy of Rotation}
+
+        \paragraph{Rotation Inertia}
+        \begin{equation}
+            I = \sum m_i r_i^2
+        \end{equation}
+
+        \paragraph{Rotational Kinetic Energy}
+        \begin{equation}
+            K = \frac{1}{2} I \omega^2
+        \end{equation}
+
+    \section{Calculating the Rotational Inertia}
+
+        \begin{eqnarray}
+            I = \int r^2 \, dm
+        \end{eqnarray}
+
+        \paragraph{Parallel-Axis Theorem}
+        \begin{equation}
+            I = I_\text{com} + M h^2
+        \end{equation}
+
+    \section{Torque}
+
+        \begin{equation}
+            \tau = \left( r \right) \left( F \sin{\phi} \right)
+        \end{equation}
+
+        There are two (equivalent) ways to calculate torque:
+
+        \begin{equation}
+            \tau = \left( r \right) \left( F \sin{\phi} \right) = r F_t
+        \end{equation}
+        \begin{equation}
+            \tau = \left( r \sin{\phi} \right) \left( F \right) = r_\perp F
+        \end{equation}
+
+
+\end{document}
