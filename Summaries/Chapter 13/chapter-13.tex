@@ -1,0 +1,126 @@
+\documentclass{article}
+
+\title{Chapter 13: Gravitation}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            F &= \text{gravitational force} \nonumber\\
+            G &= \text{universal gravitational constant} \nonumber\\
+            m &= \text{mass} \nonumber\\
+            r &= \text{radius} \nonumber\\
+            a_g &= \text{gravitational acceleration} \nonumber\\
+            U &= \text{gravitational potential energy} \nonumber\\
+            K &= \text{kinetic energy} \nonumber\\
+            E &= \text{total mechanical energy} \nonumber\\
+            T &= \text{period of motion} \nonumber\\
+            v &= \text{escape speed} \nonumber
+        \end{align}
+
+        \paragraph{Constants}
+        \begin{align}
+            G &= \SI[per-mode=fraction]{6.67e-11}{\meter\per\second\squared} \nonumber
+        \end{align}
+
+    \section{Newton's Law of Gravitation}
+
+        \begin{equation}
+            F = G \frac{m_1 m_2}{r^2}
+        \end{equation}
+
+    \section{Gravitation Near Earth's Surface}
+
+        \paragraph{Acceleration Due to Gravity From An Object}
+        \begin{equation}
+            a_g = \frac{G M}{r^2}
+        \end{equation}
+
+        \paragraph{Gravitation Inside Earth}
+        A uniform shell of matter exerts no net gravitational force on a particle located inside it.
+
+    \section{Gravitational Potential Energy}
+
+        \begin{equation}
+            U = - \frac{G M m}{r}
+        \end{equation}
+
+        \paragraph{Energy of A Projectile That Reaches Escape Speed}
+        For a projectile to leave the surface of a planet it must reach the escape speed $v$. When the object reaches infinity it's total energy is $0$ because it has no kinetic energy (gravity will have slowed it down completely) and no potential energy (due to infinite separation). Therefore, due to conservation of energy, the total energy must always be $0$:
+        \begin{equation}
+            K + U = \frac{1}{2} m v^2 + \left( - \frac{G M m}{R} \right) = 0
+        \end{equation}
+
+        \paragraph{Calculating Escape Speed}
+        \begin{equation}
+            v = \sqrt{\frac{2 G M}{R}}
+        \end{equation}
+
+    \section{Planets And Satellites: Kepler's Laws}
+
+        \paragraph{The Law of Orbits}
+        All planets move in elliptical orbits, with the Sun at one focus.
+
+        \paragraph{The Law of Areas}
+        A line that connects a planet to the Sun sweeps out equal areas in the plane of the planet's orbit in equal time intervals; that is, the rate $\frac{dA}{dt}$ at which it sweeps out area $A$ is constant.
+
+        \paragraph{The Law of Periods}
+        The square of the period of any planet is proportional to the cube of the semimajor axis of its orbit.
+        \begin{equation}
+            T^2 = \left( \frac{4 \pi^2}{G M} \right) r^3
+        \end{equation}
+        Alternatively:
+        \begin{equation}
+            \frac{T^2}{r^3} = \frac{4 \pi^2}{G M}
+        \end{equation}
+        Explanation:
+        \begin{align}
+            F &= m a \nonumber\\
+            \frac{G M m}{r^2} &= \left( m \right) \left( \omega^2 r \right) \nonumber\\
+            \frac{G M m}{r^2} &= m {\left( \frac{2 \pi}{T} \right)}^2 r, \; \text{using} \; \omega = \frac{2 \pi}{T} \nonumber\\
+            T^2 &= \left( \frac{4 \pi^2}{G M} \right) r^3 \nonumber
+        \end{align}
+
+    \section{Satellites: Orbits and Energy}
+
+        \paragraph{Kinetic Energy}
+        \begin{eqnarray}
+            K = \frac{1}{2} m v^2 = \frac{G M m}{2r}
+        \end{eqnarray}
+        Explanation:
+        \begin{align}
+            F &= m a \nonumber\\
+            \frac{G M m}{r^2} &= m \frac{v^2}{r} \nonumber\\
+            v^2 &= \frac{G M}{r} \nonumber\\
+            K &= \frac{1}{2} m v^2 \nonumber\\
+            K &= \frac{1}{2} m \left( \frac{G M}{r} \right) \nonumber\\
+            K &= \frac{G M m}{2 r} \nonumber
+        \end{align}
+
+        \paragraph{Total Mechanical Energy}
+        \begin{equation}
+            E = K + U = \frac{G M m}{2r} - \frac{G M m}{r} \nonumber
+        \end{equation}
+        \begin{equation}
+            E = - \frac{G M m}{2 r}
+        \end{equation}
+
+        \paragraph{Total Mechanical Energy For An Elliptical Orbit}
+        \begin{eqnarray}
+            E = - \frac{G M m}{2 a}
+        \end{eqnarray}
+        Where $a$ is the semimajor axis.
+
+\end{document}
