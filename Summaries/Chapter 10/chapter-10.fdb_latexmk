@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1619666503 "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.tex" "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.pdf" "chapter-10" 1619666505
-  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.aux" 1619666504 1734 9c9d8a65d72dab9f5afb7b56116e9166 ""
-  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.tex" 1619666501 3984 56b07cec8813c3ed210fe06621383e30 ""
+["pdflatex"] 1619669918 "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.tex" "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.pdf" "chapter-10" 1619669920
+  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.aux" 1619669919 1825 e3885df1c6953df8213f83b804eb7191 ""
+  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.tex" 1619669917 4180 507ac386233813235de5cfd9e8f17eb5 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -101,11 +101,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1618325914 2724743 be57ca7905eb30ce8b37712f3a86fd70 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "chapter-10.aux" 1619666504 1734 9c9d8a65d72dab9f5afb7b56116e9166 "pdflatex"
-  "chapter-10.tex" 1619666501 3984 56b07cec8813c3ed210fe06621383e30 ""
+  "chapter-10.aux" 1619669919 1825 e3885df1c6953df8213f83b804eb7191 "pdflatex"
+  "chapter-10.tex" 1619669917 4180 507ac386233813235de5cfd9e8f17eb5 ""
   (generated)
-  "chapter-10.log"
   "chapter-10.pdf"
-  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.pdf"
-  "chapter-10.aux"
   "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.log"
+  "chapter-10.log"
+  "chapter-10.aux"
+  "/Users/rylanpolster/Documents/Physics Summaries/Summaries/Chapter 10/chapter-10.pdf"
