@@ -1,0 +1,89 @@
+\documentclass{article}
+
+\title{Chapter 15: Oscillations}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section*{General}
+
+        \paragraph{Quantities}
+        \begin{align}
+            T &= \text{period of oscillation} \nonumber\\
+            f &= \text{frequency of oscillation} \nonumber\\
+            x &= \text{displacement} \nonumber\\
+            x_m &= \text{maximum displacement} \nonumber\\
+            \omega &= \text{angular frequency} \nonumber\\
+            \phi &= \text{phase angle} \nonumber\\
+            v &= \text{velocity} \nonumber\\
+            a &= \text{acceleration} \nonumber\\
+            F &= \text{force} \nonumber\\
+            k &= \text{spring constant} \nonumber\\
+            U &= \text{potential energy} \nonumber\\
+            K &= \text{kinetic energy} \nonumber\\
+            E &= \text{total mechanical energy} \nonumber
+        \end{align}
+
+    \section{Simple Harmonic Motion}
+
+        \paragraph{Period of Oscillation}
+        \begin{equation}
+            T = \frac{1}{f}
+        \end{equation}
+
+        \paragraph{Angular Frequency}
+        \begin{equation}
+            \omega = \frac{2 \pi}{T} = 2 \pi f
+        \end{equation}
+
+        \paragraph{Displacement}
+        \begin{equation}
+            x(t) = x_m \cos{\left( \omega t + \phi \right)}
+        \end{equation}
+
+        \paragraph{Velocity}
+        \begin{equation}
+            v(t) = - \omega x_m \sin{\left( \omega t + \phi \right)}
+        \end{equation}
+
+        \paragraph{Acceleration}
+        \begin{equation}
+            a(t) = - \omega^2 x_m \cos{\left( \omega t + \phi \right)}
+        \end{equation}
+        \begin{equation}
+            a(t) = - \omega^2 x(t)
+        \end{equation}
+        In SHM, the acceleration $a$ is proportional to the displacement $x$ but opposite in sign, and the two quantities are related by the square of the angular frequency $\omega$.
+
+        \paragraph{Hooke's Law}
+        \begin{equation}
+            F = - k x
+        \end{equation}
+
+    \section{Energy In Simple Harmonic Motion}
+
+        \paragraph{Potential Energy}
+        \begin{equation}
+            U(t) = \frac{1}{2} k x^2 = \frac{1}{2} k x_m^2 \cos^2 \left( \omega t + \phi \right)
+        \end{equation}
+
+        \paragraph{Kinetic Energy}
+        \begin{equation}
+            K(t) = \frac{1}{2} m v^2 = \frac{1}{2} m \omega^2 x_m^2 \sin^2 \left( \omega t + \phi \right)
+        \end{equation}
+
+        \paragraph{Total Mechanical Energy}
+        \begin{equation}
+            E = U + K = \frac{1}{2} k x_m^2
+        \end{equation}
+
+\end{document}
