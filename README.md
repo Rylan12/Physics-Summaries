@@ -2,7 +2,10 @@
 
 This is where I will type my unit summaries for my physics classes.
 
-## Summaries
+## Course Summaries
+- [Mechanics](Summaries/Mechanics/mechanics.pdf)
+
+## Chapter Summaries
 
 - [Chapter 2](Summaries/Chapter%202/chapter-2.pdf)
 - [Chapter 3](Summaries/Chapter%203/chapter-3.pdf)

@@ -33,7 +33,7 @@ ln -s "../Summaries/Chapter $CHAPTER/chapter-$CHAPTER.pdf" "$DIR/PDFs/chapter-$C
 
 # Update README
 CHAPTERS="$(find "$DIR/Summaries" -type d -name "Chapter *" | awk '{print $NF}' | sort -n)"
-sed '/## Summaries/q' "$DIR/README.md" | tee "$DIR/README.md" > /dev/null
+sed '/## Chapter Summaries/q' "$DIR/README.md" | tee "$DIR/README.md" > /dev/null
 echo '' >> "$DIR/README.md"
 for num in $CHAPTERS; do
     echo "- [Chapter $num](Summaries/Chapter%20$num/chapter-$num.pdf)" >> "$DIR/README.md"

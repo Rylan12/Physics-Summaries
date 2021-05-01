@@ -1,0 +1,463 @@
+\documentclass{article}
+
+\title{AP Physics C: Mechanics}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section{Kinematics}
+
+        \subsection{Motion in One Dimension}
+            \label{motion-one-dimension}
+            \begin{align}
+                v_x = \frac{dx}{dt}, &\; v_{x\text{(avg)}} = \frac{\Delta x}{\Delta t} \\
+                a_x = \frac{dv_x}{dt}, &\; a_{x\text{(avg)}} = \frac{\Delta v_x}{\Delta t}
+            \end{align}
+
+            \paragraph{Constant Acceleration}
+            \begin{align}
+                x &= x_0 + v_{x_0} t + \frac{1}{2} a_x t^2 \\
+                v_x &= v_{x_0} + a_x t \\
+                v_x^2 &= v_{x_0}^2 + 2 a_x \left( x - x_0 \right) \\
+            \end{align}
+
+        \subsection{Motion in Two Dimensions}
+
+            \begin{equation}
+                \vec{r} = \vec{x} + \vec{y} + \vec{z}
+            \end{equation}
+            \begin{equation}
+                \vec{v} = \frac{d\vec{r}}{dt}, \; \vec{v}_{\text{avg}} = \frac{\Delta \vec{r}}{\Delta t}
+            \end{equation}
+            \begin{equation}
+                \vec{a} = \frac{d\vec{v}}{dt}, \; \vec{a}_{\text{avg}} = \frac{\Delta \vec{v}}{\Delta t}
+            \end{equation}
+            The same equations from section \ref{motion-one-dimension} apply here.
+
+    \section{Newton’s Laws of Motion}
+
+        \subsection{First and Second Law}
+            \paragraph{First Law}
+            Newton's first law states that when the acceleration of an object is zero, the object is in a state of equilibrium and the following statements are true:
+            \begin{align}
+                \sum F_x &= 0 \nonumber\\
+                \sum F_y &= 0 \nonumber
+            \end{align}
+
+            \paragraph{Second Law}
+            \begin{equation}
+                \vec{a} = \frac{\sum \vec{F}}{m}
+            \end{equation}
+
+            \paragraph{Friction}
+            The coefficient of static friction ($\mu_s$) is used when the object is at rest to calculate the maximum frictional force that can be exerted on an object. the coefficient of kinetic friction ($\mu_k$) is used when the object is already in motion to calculate the frictional force exerted on that object.
+            \begin{align}
+                \left| \vec{F}_{f_s} \right| &\le \mu_s \left| \vec{F}_N \right| \\
+                \left| \vec{F}_{f_k} \right| &= \mu_k \left| \vec{F}_N \right|
+            \end{align}
+
+            \paragraph{Resitive Force}
+            A resistive force is a velocity-dependent force in the opposite direction of the velocity (e.g. drag). Examples:
+            \begin{align}
+                \vec{F}_r &= - k \vec{v} \\
+                \left| \vec{F}_r \right| &= k v^2
+            \end{align}
+            Newton's second law can lead to a differential equation for velocity. For example:
+            \begin{align}
+                a &= \frac{F}{m} \nonumber\\
+                \frac{dv}{dt} &= - \frac{kv}{m} \nonumber\\
+                \frac{1}{v} dv &= - \frac{k}{m} dt \nonumber\\
+                \int_0^v \frac{1}{v} dv &= \int_0^t - \frac{k}{m} dt \nonumber\\
+                \ln{v} &= - \frac{k}{m} t \nonumber\\
+                v(t) &= e^{- \frac{k}{m}t} \nonumber
+            \end{align}
+
+            \paragraph{Terminal Velocity}
+            Terminal velocity is reached when the magnitude of the drag force is equal to the magnitude of the weight of the object.
+
+        \subsection{Circular Motion}
+            \paragraph{Centripetal Acceleration}
+            Centripetal acceleration can come from any force that is directed perpendicular to the velocity of an object. An object that changes direction will always have some centripetal acceleration. It can be defined in terms of the radius and linear or angular velocity:
+            \begin{equation}
+                a_c = \frac{v^2}{r} = \omega^2 r
+            \end{equation}
+
+        \subsection{Third Law}
+            Force pairs with equal magnitude and opposite directions exist between any two interacting objects.
+
+    \section{Work, Energy, and Power}
+
+        \subsection{Work-Energy Theorem}
+            When a force is exerted on an object, and the energy of the object changes, then work was done on the object. The component of the displacement that is parallel to the applied force is used to calculate the work done on an object using:
+            \begin{equation}
+                W = \int_a^b \vec{F}(r) \cdot d\vec{r}
+            \end{equation}
+            The net work done on an object is equal to the change in the object's kinetic energy.
+            \begin{equation}
+                W_\text{net} = \Delta K
+            \end{equation}
+
+            \paragraph{Kinetic Energy}
+            \begin{equation}
+                K = \frac{1}{2} m v^2
+            \end{equation}
+
+        \subsection{Forces and Potential Energy}
+            \paragraph{Conservative Force}
+            A force is a conservative force if the work done on an object by that force depends only on the initial and final position of the object (path-independent). The work done by a conservative force is zero if the object undergoes a displacement that completes a closed path. An example of a conservative force is the spring force. Examples of \textit{non}-conservative forces include friction and resistive forces.
+
+            \paragraph{Potential Energy}
+            For a conservative force internal to a system, the change in potential energy of the system is:
+            \begin{equation}
+                \Delta U = - \int_a^b \vec{F}_\text{cf} \cdot d\vec{r}
+            \end{equation}
+            \begin{equation}
+                F_x = - \frac{dU(x)}{dx}
+            \end{equation}
+
+            \paragraph{Spring Forces}
+            A spring force is an example of a conservative force. A linear spring force can be defined as:
+            \begin{equation}
+                \vec{F}_s = - \vec{k} \Delta \vec{x}
+            \end{equation}
+            And the potential energy is:
+            \begin{equation}
+                U = - \int F_x \, dx = - \int \left( - k \Delta x \right) dx = \frac{1}{2} k \left( \Delta x \right)^2
+            \end{equation}
+
+            \paragraph{Gravitational Potential Energy Near Earth's Surface}
+            \begin{equation}
+                \Delta U_g = - \int_0^h F_y \, dy = - \int_0^h \left( - m g \right) dy = m g \Delta h
+            \end{equation}
+
+        \subsection{Conservation of Energy}
+            If all forces are internal to the system, the total change in mechanical energy is zero. Mechanical energy is defined as:
+            \begin{equation}
+                E = U_g + K + U_s
+            \end{equation}
+            For non-conservative forces, the work done on a system is:
+            \begin{equation}
+                W_\text{nc} = \Delta E
+            \end{equation}
+            If no external work is done on a system, the total energy in that system is constant. This is called a conservative system.
+
+        \subsection{Power}
+            Power is the rate at which a force does work on an object.
+            \begin{align}
+                P &= \frac{dE}{dt} \\
+                P &= \vec{F} \cdot \vec{r}
+            \end{align}
+
+    \section{Systems of Particles and Linear Momentum}
+
+        \subsection{Center of Mass}
+            The linear motion of a system can be described by the displacement, velocity, and acceleration of its center of mass. The center of mass can be calculated using one of the following:
+            \begin{equation}
+                x_\text{cm} = \frac{\sum m_i x_i}{\sum m_i}
+            \end{equation}
+            \begin{equation}
+                x_\text{cm} = \frac{\int x \, dm}{\int dm}
+            \end{equation}
+
+        \subsection{Impulse and Momentum}
+            An impulse exerted on an object will change the linear momentum of the object. Momentum if defined as:
+            \begin{equation}
+                \vec{p} = m \vec{v}
+            \end{equation}
+            The rate of change of momentum is equal to the net external force:
+            \begin{equation}
+                \vec{F} = \frac{d\vec{p}}{dt}
+            \end{equation}
+            Impulse is the average force acting over a time interval and is equal to the change in momentum:
+            \begin{eqnarray}
+                \vec{J} = \vec{F}_\text{avg} \Delta t = \int \vec{F} dt = \Delta \vec{p}
+            \end{eqnarray}
+
+        \subsection{Conservation of Linear Momentum, Collisions}
+            The total momentum of a system can transfer from one object to another without changing the total momentum of the system.
+
+            \paragraph{Collisions}
+            Kinetic energy is only conserved in elastic collisions. In inelastic collisions, some kinetic energy is transferred to the internal energy of the system.
+
+    \section{Rotation}
+
+        \subsection{Torque and Rotational Statics}
+            \paragraph{Torque}
+            The maximum torque is applied when the force is perpendicular to the moment arm. Torque is defined as:
+            \begin{equation}
+                \vec{\tau} = \vec{r} \times \vec{F}
+            \end{equation}
+            To be in total equilibrium, both of these conditions must be met:
+            \begin{align}
+                \sum \vec{F} &= 0 \\
+                \sum \vec{\tau} &= 0
+            \end{align}
+
+            \paragraph{Moment of Inertia/Rotational Inertia}
+            The moment of inertia is a mass-like, resistive quantity. It can be thought of as measuring how resistant to rotational change an object is.
+            \begin{equation}
+                I = \sum m_i r_i^2
+            \end{equation}
+            \begin{equation}
+                I = \int r^2 \, dm
+            \end{equation}
+            Use linear mass density to calculate the differential $dm$. For example:
+            \begin{align}
+                \lambda &= \frac{m}{x} \nonumber\\
+                \lambda &= \frac{dm}{dx} \nonumber\\
+                dm &= \lambda dx \nonumber
+            \end{align}
+
+            \paragraph{Parallel Axis Theorem}
+            The parallel axis theorem allows the moments of inertia to be computed for an object through any axis that is parallel to an axis through its center of mass.
+            \begin{equation}
+                I' = I_\text{cm} + M d^2
+            \end{equation}
+
+        \subsection{Rotational Kinematics}
+            These equations are similar to those from section \ref{motion-one-dimension} except with rotational quantities instead of linear quantities.
+            \begin{equation}
+                \omega = \frac{d\theta}{dt}
+            \end{equation}
+            \paragraph{Constant Acceleration}
+            \begin{align}
+                \theta &= \theta_0 + \omega_0 t + \frac{1}{2} \alpha t^2 \\
+                \omega &= \omega_0 + \alpha t \\
+                \omega^2 &= \omega_0^2 + 2 \alpha \left( \theta - \theta_0 \right)
+            \end{align}
+
+            \paragraph{Rolling Objects}
+            These only hold if the object is rolling without slipping.
+            \begin{align}
+                \label{eq:omega-v}
+                v &= r \omega \\
+                a &=r \alpha \\
+                \Delta x &= r \Delta \theta
+            \end{align}
+
+        \subsection{Rotational Dynamics and Energy}
+            Rotational analog to Newton's second law:
+            \begin{equation}
+                \vec{\alpha} = \frac{\sum \vec{\tau}}{I}
+            \end{equation}
+
+            \paragraph{Kinetic Energy}
+            \begin{equation}
+                K_R = \frac{1}{2} I \omega^2
+            \end{equation}
+            \begin{equation}
+                W = \int \tau \, d\theta
+            \end{equation}
+            If an object is rolling, there must be a frictional force. Therefore, conservation of mechanical energy cannot be applied.
+
+        \subsection{Angular Momentum and Its Conservation}
+            In the absence of an external torque, the total angular momentum of a system can transfer from one object to another within the system without changing the total angular momentum of the system.
+            \begin{equation}
+                \vec{L} = I \vec{\omega}
+            \end{equation}
+            For a linearly translating particle:
+            \begin{equation}
+                \vec{L} = \vec{r} \times \vec{p}
+            \end{equation}
+
+            \paragraph{Angular Impulse}
+            \begin{equation}
+                \int \vec{\tau} \, dt = \Delta \vec{L}
+            \end{equation}
+            \begin{equation}
+                \vec{\tau} = \frac{d\vec{L}}{dt}
+            \end{equation}
+
+    \section{Oscillations}
+
+        \subsection{Simple Harmonic Motion, Springs, and Pendulums}
+            Any physical system that creates a linear restoring force ($\vec{F}_\text{rest} = - k \Delta \vec{x}$) will exhibit simple harmonic motion (SHM). The general relationship for simple harmonic motion (SHM) is given by:
+            \begin{align}
+                x(t) &= x_\text{max} \cos \left( \omega t + \phi \right) \\
+                v(t) &= - x_\text{max} \omega \sin \left( \omega t + \phi \right) \\
+                a(t) &= - x_\text{max} \omega^2 \cos \left( \omega t + \phi \right)
+            \end{align}
+            Acceleration is proportional to displacement:
+            \begin{equation}
+                \label{eq:shm-a-x}
+                a(t) = - \omega^2 \, x(t)
+            \end{equation}
+            The period of SHM is related to angular frequency:
+            \begin{equation}
+                \label{eq:shm-period}
+                T = \frac{2 \pi}{\omega} = \frac{1}{f}
+            \end{equation}
+
+            \paragraph{Energy}
+            Potential energy is maximized when displacement is maximized. It is zero at equilibrium. It can be calculated using the spring constant and displacement:
+            \begin{equation}
+                U_s = \frac{1}{2} k \left( \Delta x \right)^2
+            \end{equation}
+            Kinetic energy is maximized at equilibrium and is zero at the maximum displacement. It can be calculated using:
+            \begin{equation}
+                K = \frac{1}{2} m v^2
+            \end{equation}
+            The total energy of a system is:
+            \begin{equation}
+                E_\text{total} = K + U_s = \frac{1}{2} k x_\text{max}^2
+            \end{equation}
+
+            \paragraph{Springs in Combination}
+            Springs in combination can be treated as one spring with a new effective spring constant ($k_\text{eff}$). Start by setting up a spring combination vertically and relating the spring force to the weight:
+            \begin{align}
+                F_\text{net} &= k x - m g \nonumber\\
+                F_\text{net} &= 0 \nonumber\\
+                k x &= m g \nonumber
+            \end{align}
+            When springs are in series, the combined spring stretches twice as much ($x_\text{eff} = 2x)$, so $k_\text{eff}$ must be half as large:
+            \begin{align}
+                k_\text{eff} \, x_\text{eff} &= m g \nonumber\\
+                \frac{k}{2} \left(2 x \right) &= m g \nonumber
+            \end{align}
+            Therefore:
+            \begin{equation}
+                \frac{1}{k_\text{eff-series}} = \sum_i \frac{1}{k_i}
+            \end{equation}
+            When springs are in parallel, the combines spring stretches half as much so $k_\text{eff}$ must be twice as large:
+            \begin{align}
+                k_\text{eff} \, x_\text{eff} &= m g \nonumber\\
+                \left(2 k \right) \frac{x}{2} &= m g \nonumber
+            \end{align}
+            Therefore:
+            \begin{equation}
+                k_\text{eff-parallel} = \sum_i k_i
+            \end{equation}
+
+            \paragraph{Period for a Spring}
+            \begin{equation}
+                T_s = 2 \pi \sqrt{\frac{m}{k}}
+            \end{equation}
+            This can be derived:
+            \begin{align}
+                F &= - k x \nonumber\\
+                a &= \frac{F}{m} \nonumber\\
+                a &= - \frac{k}{m} x \nonumber
+            \end{align}
+            Using equation \ref{eq:shm-a-x}:
+            \begin{align}
+                a &= - \omega^2 x \nonumber\\
+                \omega^2 &= \frac{k}{m} \nonumber
+            \end{align}
+            Using equation \ref{eq:shm-period}:
+            \begin{align}
+                \omega &= \frac{2 \pi}{T} \nonumber\\
+                \left( \frac{2 \pi}{T} \right)^2 &= \frac{k}{m} \nonumber\\
+                T &= 2 \pi \sqrt{\frac{m}{k}} \nonumber
+            \end{align}
+
+            \paragraph{Period for a pendulum}
+            \begin{equation}
+                T_p = 2 \pi \sqrt{\frac{\ell}{g}}
+            \end{equation}
+            Similarly, this can be derived using length ($\ell$) and angular displacement ($\theta$):
+            \begin{align}
+                s &= \ell \theta \nonumber\\
+                \frac{ds}{dt} &= \ell \frac{d\theta}{dt} \nonumber\\
+                \frac{d^2s}{dt^2} &= \ell \frac{d^2\theta}{dt^2} \nonumber\\
+                a &= \ell \frac{d^2\theta}{dt^2} \nonumber
+            \end{align}
+            A differential equation can be set up using Newton's second law:
+            \begin{align}
+                a &= \frac{F}{m} \nonumber\\
+                F &= - m g \sin \theta \nonumber\\
+                \ell \frac{d^2\theta}{dt^2} &= \frac{- mg \sin \theta}{m} \nonumber\\
+                \frac{d^2\theta}{dt^2} &= - \frac{g \sin \theta}{\ell} \nonumber
+            \end{align}
+            Assuming that $\theta < 15 \degree$, $\sin \theta \approx \theta$:
+            \begin{equation}
+                \frac{d^2\theta}{dt^2} = - \frac{g}{\ell} \theta \nonumber
+            \end{equation}
+            Similarly to how $a = \omega^2 x$, we can say:
+            \begin{equation}
+                \frac{d^2\theta}{dt^2} = - \left( \sqrt{\frac{g}{\ell}} \right)^2 \theta \nonumber
+            \end{equation}
+            So, since $\omega^2 = \frac{g}{\ell}$ and $T = \frac{2\pi}{\omega}$:
+            \begin{equation}
+                T = 2 \pi \sqrt{\frac{\ell}{g}} \nonumber
+            \end{equation}
+
+            \paragraph{Period for a Physical Pendulum}
+            \begin{equation}
+                T = 2 \pi \sqrt{\frac{I}{mgD}}
+            \end{equation}
+            Where $D$ is the distance between the center of mass and the axis of rotation.
+
+            \paragraph{Period for a Torsional Pendulum}
+            \begin{equation}
+                T = 2 \pi \sqrt{\frac{I}{\kappa}}
+            \end{equation}
+            Where $\kappa$ is the torsional constant.
+
+    \section{Gravitation}
+
+        \subsection{Gravitational Forces}
+            \begin{equation}
+                \left| \vec{F}_G \right| = \frac{G m_1 m_2}{r^2}
+            \end{equation}
+            Using Newton's second law (using $M_e$ and $R_e$ as the mass and radius of Earth), a value for $g$ can be found:
+            \begin{align}
+                a &= \frac{F}{m} \nonumber\\
+                g &= \frac{1}{m} \frac{G m M_e}{R_e^2} \nonumber\\
+                g &= \frac{GM_e}{R_e^2}
+            \end{align}
+            Or, more generally for the acceleration due to gravity at a distance $r$ away from an object with mass $M$:
+            \begin{equation}
+                g = \frac{GM}{r^2}
+            \end{equation}
+
+        \subsection{Orbits of Planets and Satellites}
+            The centripetal force acting on a satellite is provided by the gravitational force between the satellite and the planet.
+
+            \paragraph{Orbital Velocity}
+            The orbital velocity which can be calculated using Newton's second law:
+            \begin{align}
+                F &= m a \nonumber\\
+                \frac{G m M}{r^2} &= m \frac{v^2}{r} \nonumber\\
+                v^2 &= \frac{GM}{r} \nonumber\\
+                v &= \sqrt{\frac{GM}{r}}
+            \end{align}
+
+            \paragraph{Kepler's Third Law for Orbits}
+            This law gives an equation for the period of the orbit of a satellite around a planet. Use Newton's second law to derive this equation:
+            \begin{align}
+                F &= m a \nonumber\\
+                \frac{G M m}{r^2} &= m \frac{v^2}{r} \nonumber\\
+                v &= \frac{2 \pi r}{T} \nonumber\\
+                \frac{G M m}{r^2} &= m \frac{\left( \frac{2 \pi r}{T} \right)^2}{r} \nonumber\\
+                T^2 &= \frac{4 \pi^2}{GM} r^3
+            \end{align}
+
+            \paragraph{Gravitational Potential Energy}
+            \begin{equation}
+                U_g = - \frac{G m_1 m_2}{r}
+            \end{equation}
+            The total mechanical energy of a satellite is always negative:
+            \begin{align}
+                K &= \frac{G m_1 m_2}{2r} \\
+                E &= K + U \nonumber\\
+                E &= - \frac{G m_1 m_2}{2 r}
+            \end{align}
+
+            \paragraph{Escape Velocity}
+            Use the conservation of energy. At the launch point ($A$), the total mechanical energy can be calculated. Because of the conservation of energy, this must be equal to the energy of the object once it escapes the planet's gravity ($U = U_\infty = 0$). Because the goal is to find the minimum escape velocity, this will also result in no kinetic energy a that point. Using the conservation of energy at points $A$ and $\infty$, solve for $v$ to find the escape velocity:
+            \begin{align}
+                K_A + U_A &= K_\infty + U_\infty \nonumber\\
+                \frac{1}{2} m v^2 - \frac{G M m}{r} &= 0 \nonumber\\
+                v &= \sqrt{\frac{2GM}{r}}
+            \end{align}
+
+\end{document}
