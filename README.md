@@ -4,6 +4,7 @@ This is where I will type my unit summaries for my physics classes.
 
 ## Course Summaries
 - [Mechanics](Summaries/Mechanics/mechanics.pdf)
+- [Electricity and Magnetism](Summaries/Electricity%20and%20Magnetism/electricity-and-magnetism.pdf)
 
 ## Chapter Summaries
 

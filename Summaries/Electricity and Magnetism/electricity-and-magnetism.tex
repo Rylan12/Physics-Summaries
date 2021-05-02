@@ -1,0 +1,413 @@
+\documentclass{article}
+
+\title{AP Physics C: Electricity and Magnetism}
+\author{Rylan Polster}
+
+\usepackage[parfill]{parskip}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{textcomp,gensymb}
+\usepackage{siunitx}
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+    \maketitle
+
+    \section{Electrostatics}
+
+        \subsection{Charge and Coulomb's Law}
+            The presence of an electric field will polarize a neutral object (conductor or insulator). This can create an “induced” charge on the surface of the object.
+
+            \paragraph{Coulomb's Law}
+            \begin{equation}
+                \left| \vec{F}_E \right| = \frac{1}{4 \pi \epsilon_0} \left| \frac{q_1 q_2}{r^2} \right|
+            \end{equation}
+
+        \subsection{Electric Field and Electric Potential}
+            \begin{align}
+                \vec{E} &= \frac{\vec{F}_E}{q} \\
+                \vec{E} &= \frac{1}{4 \pi \epsilon_0} \left| \frac{q}{r^2} \right|
+            \end{align}
+            Here, $q$ is a test charge. It is assumed to be positively charged and be of negligible size and mass. The direction of the electric field is the direction that the test charge would move.
+
+            \paragraph{Electric Field Lines}
+            The electric field always points from positive charges to negative charges. Electric field lines are always perpendicular to equipotential lines. The electric field is greater where the lines are more densely packed.
+
+        \subsection{Electric Potential Due to Point Charges and Uniform Fields}
+            \paragraph{Electric Potential}
+            \begin{equation}
+                V = \frac{1}{4 \pi \epsilon_0} \frac{q}{r}
+            \end{equation}
+            Electric potential is a scalar quantity meaning that for multiple point charges, the potential is:
+            \begin{equation}
+                V = \frac{1}{4 \pi \epsilon_0} \sum_i \frac{q_i}{r_i}
+            \end{equation}
+            The electric potential is zero at an infinity distance from a point charge.
+
+            \paragraph{Electric Potential Energy}
+            \begin{equation}
+                \Delta U = q \Delta V
+            \end{equation}
+            The potential energy of two point charges near each other:
+            \begin{equation}
+                U_E = \frac{1}{4 \pi \epsilon_0} \frac{q_1 q_2}{r}
+            \end{equation}
+
+            \paragraph{Equipotential Lines}
+            The characteristics and direction of an electric field can be determined from the characteristics of equipotential lines. The relative magnitude of an electric field can be determined by the density of the potential lines. The direction of the electric field is defined to be perpendicular to an equipotential line and pointing in the direction of the decreasing potential.
+
+            \paragraph{Electric Field and Electric Potential}
+            \begin{equation}
+                \Delta V = V_b - V_a = - \int_a^b \vec{E} \cdot d\vec{r}
+            \end{equation}
+            \begin{equation}
+                E_x = - \frac{dV}{dx}
+            \end{equation}
+            To calculate the potential at a given point, use $V_\infty = 0$ to set up the integral:
+            \begin{align}
+                V_\infty - V_a &= - \int_a^\infty \vec{E} \cdot d\vec{r} \nonumber\\
+                0 - V_a &= - \int_a^\infty \vec{E} \cdot d\vec{r} \nonumber\\
+                V_a &= \int_a^\infty \vec{E} \cdot d\vec{r} \nonumber\\
+                V_a &= \lim_{c \to \infty} \int_a^c \vec{E} \cdot d\vec{r} \nonumber
+            \end{align}
+
+        \subsection{Gauss's Law}
+            \paragraph{Electric Flux}
+            Electric flux can be thought of as the amount of electric field through a given area:
+            \begin{equation}
+                \Phi = \int \vec{E} \cdot d\vec{A}
+            \end{equation}
+            The electric flux through a closed surface is the surface integral of the electric field over the surface area:
+            \begin{equation}
+                \phi_\text{surface} = \oint \vec{E} \cdot d\vec{A}
+            \end{equation}
+
+            \paragraph{Gauss's Law}
+            \begin{equation}
+                \oint \vec{E} \cdot d\vec{A} = \frac{q_\text{enclosed}}{\epsilon_0}
+            \end{equation}
+            The charge enclosed in a given gaussian surface of an inductor can be found using $\rho = \frac{dq}{dV}$:
+            \begin{equation}
+                Q = \int \rho(r) dV
+            \end{equation}
+
+        \subsection{Fields and Potentials of other charge distributions}
+            \paragraph{Electric Field}
+            The electric field of any charge distribution can be determined using the definition of electric field due to a differential charge $dq$:
+            \begin{equation}
+                d\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{dq}{r^2} \hat{r}
+            \end{equation}
+
+            \paragraph{Electric Potential}
+            \begin{equation}
+                V = \frac{1}{4 \pi \epsilon_0} \int \frac{dq}{r}
+            \end{equation}
+
+    \section{Conductors, Capacitors, Dielectrics}
+
+        \subsection{Electrostatics with Conductors}
+            Excess charge on an insulated conductor will spread out on the entire conductor until there is no more movement of the charge. All of the charge in a conductor will exist on the surface. Within the conductor, there is no electric field. Additionally, the surface of a conductor is an equipotential surface because if there was a potential difference, charges would flow and the conductor would not be in electrostatic equilibrium.
+
+        \subsection{Capacitors}
+            Capacitors are electrical devices that store and transfer electrostatic potential energy. The capacitance is ability for the capacitor to store electric charge. It can be calculated as follows:
+            \begin{equation}
+                C = \frac{Q}{\Delta V}
+            \end{equation}
+            The energy stored in a capacitor is determined by one of the following relationships:
+            \begin{align}
+                U_E &= \frac{1}{2} C \left( \Delta V \right)^2 \\
+                U_E &= \frac{1}{2} Q \Delta V \\
+                U_E &= \frac{Q^2}{2 C}
+            \end{align}
+            Capacitance is an intrinsic value to the capacitor. It can be calculated based on physical properties of a parallel-plate capacitor as follows:
+            \begin{equation}
+                C = \frac{\epsilon_0 A}{d}
+            \end{equation}
+            The electric field between plates in a capacitor can be found using Gauss's law. For a parallel-plate capacitor, the electric field can be calculated using:
+            \begin{equation}
+                E = \frac{V}{d}
+            \end{equation}
+            When in different circuits, a capacitor will behave differently. If the capacitor is connected to a battery, it will have a constant potential and a changing voltage. If the capacitor is isolated from a battery, the charge on the capacitor will remain constant and other properties can change.
+
+        \subsection{Dielectrics}
+            An insulator has different properties (than a conductor) when placed in an electric field. Each insulator will become polarized to a certain degree. This is quantified by the dielectric constant ($\kappa$) which must be greater than one. If the insulator becomes polarized, it will create an electric field within the space between the capacitor plates. The net electric field between the plates is the combination of the field due to the capacitor and the field due to the dielectric. The field due to a dielectric is always in the opposite direction which means that the net electric field will be less than without a dielectric.
+
+            The capacitance of a parallel-plate capacitor with a dielectric can be calculated:
+            \begin{equation}
+                C = \frac{\kappa \epsilon_0 A}{d}
+            \end{equation}
+
+    \section{Electric Circuits}
+
+        \subsection{Current and Resistance}
+            \paragraph{Current}
+            Current is the rate of charge flow through a conductor:
+            \begin{equation}
+                I = \frac{dQ}{dt}
+            \end{equation}
+            Conventional current is defined as the direction of positive charge flow.
+
+            \paragraph{Ohm's Law}
+            \begin{equation}
+                I = \frac{\Delta V}{R}
+            \end{equation}
+
+            \paragraph{Resistance}
+            Resistance is how resistant to current flow a given conductor is. It is an intrinsic value of the a given conductor which is based on the resistivity ($\rho$), a fundamental property of a conducting material:
+            \begin{equation}
+                R = \frac{\rho \ell}{A}
+            \end{equation}
+
+            \paragraph{Current Density}
+            Current density ($\vec{J}$) can be thought of as the current flow per cross-sectional area. For a conductor, this is defined as:
+            \begin{equation}
+                \vec{E} = \rho \vec{J}
+            \end{equation}
+
+            \paragraph{Current in a Conductor}
+            The current in a conductor can be defined in terms of the number of charge-carriers per unit volume ($N$), the charge of an electron ($e$), the cross-sectional area ($A$), and the drift velocity of electrons ($v_d$):
+            \begin{equation}
+                I = N e v_d A
+            \end{equation}
+
+        \subsection{Current, Resistance, and Power}
+            Power is the rate of heat loss through a resistor. It can be calculated using one of the following:
+            \begin{align}
+                P &= I \Delta V \\
+                P &= I^2 R \\
+                P &= \frac{\left( \Delta V \right)^2}{R}
+            \end{align}
+
+        \subsection{Steady-State DC Circuits with Batteries and Resistors Only}
+            \paragraph{Resistors in Series}
+            \begin{align}
+                R_s &= \sum_i R_i \\
+                I_s &= I_i \\
+                V_s &= \sum_i V_i
+            \end{align}
+
+            \paragraph{Resistors in Parallel}
+            \begin{align}
+                \frac{1}{R_p} &= \sum_i \frac{1}{R_i} \\
+                I_p &= \sum_i I_i \\
+                V_p &= V_i
+            \end{align}
+
+            \paragraph{Internal Resistance}
+            In a non-ideal battery, an internal resistance will exist within the battery. This resistance will add in series to the total external circuit resistance and reduce the operating current in the circuit. Treat the internal resistance as an additional resistor added in series with the battery.
+
+            \paragraph{Kirchhoff's Current Rule}
+            The current into a junction or node must be equal to the current out of that junction or node.
+
+            \paragraph{Kirchhoff's Loop Rule}
+            The sum of the potential differences around a closed loop must be equal to zero.
+
+            \paragraph{Ammeters}
+            An ideal ammeter has a negligible (zero) resistance. An ammeter must be placed in series with the branch for which it is measuring current.
+
+            \paragraph{Voltmeters}
+            An ideal voltmeter has a very large (infinite) resistance. A voltmeter must be placed in parallel with a circuit element when measuring potential.
+
+        \subsection{Capacitors in Circuits}
+            \paragraph{Capacitors in Series}
+            \begin{align}
+                \frac{1}{C_s} &= \sum_i \frac{1}{C_i} \\
+                V_s &= \sum_i V_i \\
+                Q_s &= Q_i
+            \end{align}
+
+            \paragraph{Capacitors in Parallel}
+            \begin{align}
+                C_p &= \sum_i C_i \\
+                V_p &= V_i \\
+                Q_p &= \sum_i Q_i
+            \end{align}
+
+            \paragraph{RC Circuits}
+            The current in an RC circuit will decrease from its maximum value to zero as the capacitor is charged. The current can be modeled as follows:
+            \begin{equation}
+                I(t) = I_\text{max} e^{- \frac{t}{RC}}
+            \end{equation}
+            The time constant is:
+            \begin{equation}
+                \tau = RC
+            \end{equation}
+            The total energy provided by the energy source (battery) that is transferred into an RC circuit during the charging process is split between the capacitor and the resistor.
+
+    \section{Magnetic Fields}
+
+        \subsection{Forces on Moving Charges in Magnetic Fields}
+            The magnetic force on a single charged particle is:
+            \begin{align}
+                \vec{F}_M &= q \left( \vec{v} \times \vec{B} \right) \\
+                F_M &= q v B \sin \theta
+            \end{align}
+            The direction of the magnetic force is perpendicular to the magnetic field and the velocity of the particle. This results in a curved or circular path. If the particle has no velocity, there will be no magnetic force.
+
+        \subsection{Forces on Current Carrying Wires in Magnetic Fields}
+            The magnetic force on a straight, current-carrying wire is:
+            \begin{equation}
+                \vec{F}_M = \int I \left(d\vec{\ell} \times \vec{B} \right)
+            \end{equation}
+            For a uniform current:
+            \begin{align}
+                \vec{F}_M &= I \left( \vec{\ell} \times \vec{B} \right) \\
+                F_M &= I \ell B \sin \theta
+            \end{align}
+            These forces can apply torques to a wire.
+
+        \subsection{Fields of Long Current-Carrying Wires}
+            The magnetic field of a long, straight, current-carrying conductor is:
+            \begin{equation}
+                B = \frac{\mu_0 I}{2 \pi r}
+            \end{equation}
+            The magnetic field inside a solenoid is uniform and can be determined using:
+            \begin{equation}
+                B = \mu_0 n I
+            \end{equation}
+
+        \subsection{Biot–Savart Law and Amp\`{e}re's Law}
+            \paragraph{Biot-Savart Law}
+            The Biot-Savart law is a fundamental law that defines the magnitude and direction of a magnetic field due to moving charges or current-carrying conductors:
+            \begin{align}
+                d\vec{B} &= \frac{\mu_0}{4 \pi} \frac{I \left( d\vec{\ell} \times \hat{r} \right)}{r^2} \\
+                dB &= \frac{\mu_0}{4 \pi} \frac{I \ell \sin \theta}{r^2}
+            \end{align}
+
+            \paragraph{Amp\`{e}re's Law}
+            Amp\`{e}re's law relates the magnitude of the magnetic field to the current enclosed by an imaginary path called an Amperian loop:
+            \begin{equation}
+                \oint \vec{B} \cdot d\vec{\ell} = \mu_0 I
+            \end{equation}
+
+    \section{Electromagnetism}
+
+        \subsection{Electromagnetic Induction (Including Faraday’s Law and Lenz’s Law)}
+            \paragraph{Magnetic Flux}
+            Magnetic flux can be thought of as the amount of magnetic field through a given area:
+            \begin{equation}
+                \Phi_B = \int \vec{B} \cdot d\vec{A}
+            \end{equation}
+
+            \paragraph{Induced Currents}
+            Induced currents arise in a conductive loop (or long wire) when there is a change in magnetic flux occurring through the loop. The induced EMF is defined by Faraday's Law:
+            \begin{equation}
+                \mathcal{E}_i = - N \frac{d\phi_B}{dt}
+            \end{equation}
+            The negative sign is Lenz's law which states that the direction of the induced EMF will be opposite to the existing EMF and will induce a magnetic field in the opposite direction.
+
+            The induced EMF can be expressed in terms of the velocity (for rectangular loops of wire moving within a magnetic field):
+            \begin{align}
+                \mathcal{E} &= \frac{d\phi_B}{dt} \nonumber\\
+                \mathcal{E} &= \frac{d\left(BA\right)}{dt} \nonumber\\
+                \mathcal{E} &= B \frac{dA}{t} \nonumber\\
+                \mathcal{E} &= B \ell \frac{dx}{dt} \nonumber\\
+                \mathcal{E} &= B \ell v
+            \end{align}
+            The current can then be calculated:
+            \begin{align}
+                I = \frac{\mathcal{E}}{R} \nonumber\\
+                I = \frac{B \ell v}{R}
+            \end{align}
+            Power can then be calculated:
+            \begin{align}
+                P &= i^2 R \nonumber\\
+                P &= \left( \frac{B \ell v}{R} \right)^2 R \nonumber\\
+                P &= \frac{B^2 \ell^2 v^2}{R}
+            \end{align}
+            Similarly, the force can be calculated:
+            \begin{align}
+                F &= I \ell B \nonumber\\
+                F &= \left( \frac{B \ell v}{R} \right) \ell B \nonumber\\
+                F &= \frac{B^2 \ell^2 v}{R}
+            \end{align}
+
+            If the only force on the object is the magnetic force, Newton's second law can be used to create a differential equation to solve for the velocity:
+            \begin{align}
+                F &= ma \nonumber\\
+                - \frac{B^2 \ell^2 v}{R} &= m \frac{dv}{dt} \nonumber\\
+                - \frac{B^2 \ell^2}{m R} dt &= \frac{1}{v} dv \nonumber\\
+                \int_0^t - \frac{B^2 \ell^2}{m R} dt &= \int_{v_0}^v \frac{1}{v} dv \nonumber\\
+                - \frac{B^2 \ell^2}{m R} t &= \ln{\frac{v}{v_0}} \nonumber\\
+                e^{- \frac{B^2 \ell^2}{m R} t} &= \frac{v}{v_0} \nonumber\\
+                v(t) &= v_0 e^{- \frac{B^2 \ell^2}{m R} t}
+            \end{align}
+
+        \subsection{Inductance (Including LR Circuits)}
+            \paragraph{Inductors}
+            An inductor is an electrical device that opposes changes in current flow. The induced EMF through a conductor can be calculated using:
+            \begin{equation}
+                \mathcal{E}_i = - L \frac{dI}{dt}
+            \end{equation}
+            The energy stored in the magnetic field of an inductor is:
+            \begin{equation}
+                U_L = \frac{1}{2} L I^2
+            \end{equation}
+            When the circuit reaches steady-state, the inductor has a resistance of zero and will act like a bare wire.
+
+            \paragraph{LC Circuits}
+            Circuits with only an inductor and a capacitor will oscillate between the capacitor being charged and the inductor storing the equivalent amount of energy. Using Kirchhoff's loop rule, a differential equation can be found:
+            \begin{align}
+                V_C &= V_L \nonumber\\
+                \frac{q}{C} &= - L \frac{dI}{dt} \nonumber\\
+                - \frac{q}{LC} &= \frac{d^2q}{dt^2} \nonumber
+            \end{align}
+            Since the second derivative of $q$ must be equal to a multiple of $q$, it follows simple harmonic motion:
+            \begin{align}
+                q(t) &= Q \cos \left( \omega t \right) \nonumber\\
+                I(t) = \frac{dq}{dr} &= - Q \omega \sin \left( \omega t \right) \nonumber\\
+                \frac{d^2q}{dt^2} &= - Q \omega^2 \cos \left( \omega t \right) \nonumber\\
+                \frac{d^2q}{dt^2} &= - \omega^2 q(t) \nonumber
+            \end{align}
+            Therefore:
+            \begin{align}
+                - \frac{q(t)}{LC} &= - \omega^2 q(t) \nonumber \nonumber\\
+                \frac{1}{LC} &= \omega^2 \nonumber\\
+                \omega &= \sqrt{\frac{1}{LC}}
+            \end{align}
+            The maximum current in an LC circuit can be calculated using conservation of energy:
+            \begin{align}
+                U_L &= U_C \nonumber\\
+                \frac{1}{2} L I^2 &= \frac{Q^2}{2C} \nonumber\\
+                I^2 &= \frac{Q^2}{LC} \nonumber\\
+                I &= \frac{Q}{\sqrt{LC}}
+            \end{align}
+
+            \paragraph{LR Circuits}
+
+            The current in an LC circuit will increase from zero to its maximum value over time. The current can be modeled as follows:
+            \begin{equation}
+                I(t) = I_\text{max} \left( 1 - e^{- \frac{t}{\frac{L}{R}}} \right)
+            \end{equation}
+            The time constant is:
+            \begin{equation}
+                \tau = \frac{L}{R}
+            \end{equation}
+
+        \subsection{Maxwell's Equations}
+            \paragraph{Gauss's Law}
+            Gauss's law is used to determine the electric field inside a region.
+            \begin{equation}
+                \oint \vec{E} \cdot d\vec{A} = \frac{q_\text{in}}{\epsilon_0}
+            \end{equation}
+
+            \paragraph{Gauss's Law in Magnetism}
+            Gauss's law in magnetism is used to determine the magnetic field in a region. It states that there can be no magnetic monopoles, so the magnetic flux through a closed surface must be zero.
+            \begin{equation}
+                \oint \vec{B} \cdot d\vec{A} = 0
+            \end{equation}
+
+            \paragraph{Faraday's Law}
+            Faraday's Law is used to determine the induced current and EMF in coils of wire. Each side of this equation is equal to the induced EMF.
+            \begin{equation}
+                \oint \vec{E} \cdot d\vec{\ell} = - \frac{d\Phi_B}{dt}
+            \end{equation}
+
+            \paragraph{Amp\`{e}re-Maxwell Law}
+            The Amp\`{e}re-Maxwell law is used to determine the magnetic field including the displacement current as a result of the induced electric field.
+            \begin{equation}
+                \oint \vec{B} \cdot d\vec{\ell} = \mu_i I + \mu_o \epsilon_0 \frac{d\Phi_E}{dt}
+            \end{equation}
+
+\end{document}
